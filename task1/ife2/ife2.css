@@ -1,6 +1,89 @@
 html,body{
 
-    font: "Times New Roman";
+    background-color: #8ec6dc;
 
+    font: "Times New Roman";
+    margin-right: 100px;
+}
+
+#header{
+
+    background-color: #626262;
+    color: #ffdead;
+}
+
+#header ul{
+    float: right;
+    color: #ffefd5;
 
 }
+
+#header li{
+    display: inline;
+    list-style: circle;
+}
+
+
+.box{
+    background-color: #fffafa;
+    margin: 20px;
+    padding: 20px;
+}
+
+.picture{
+
+    border: solid 1px #000000;
+    margin: 30px;
+    width: 60%;
+}
+
+.picture span{
+    position: relative;
+    left: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+.picture img{
+
+    position: relative;
+    left: 10px;
+    margin: 15px;
+}
+
+#list2{
+
+    list-style: none;
+}
+
+#list3{
+
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family:  Georgia, serif;
+
+}
+
+table{
+
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background-color: #626262;
+}
+#total{
+    background-color: #9370db;
+    font-weight: bolder;
+}
+
+.footer{
+
+    background-color: #393939;
+    color: purple;
+    font-weight: 1.5em;
+    height: 35px;
+
+}
+
