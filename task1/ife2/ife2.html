@@ -8,13 +8,13 @@
 <body>
 
 <div id="header">
-  <a href="http://baidu.com"><img src="logo.gif" alt="百度"></a>
-<ul>
-    <li><a href="#">导航链接一</a></li>
-    <li><a href="#">导航链接二</a></li>
-    <li><a href="#">导航链接三</a></li>
-    <li><a href="#">导航链接四</a></li>
-</ul>
+    <a href="http://baidu.com"><img src="logo.gif" alt="百度"></a>
+    <ul>
+        <li><a href="#">导航链接一</a></li>
+        <li><a href="#">导航链接二</a></li>
+        <li><a href="#">导航链接三</a></li>
+        <li><a href="#">导航链接四</a></li>
+    </ul>
 </div>
 
 <div class="box">
@@ -67,8 +67,8 @@
     <h2>图片</h2>
 
     <div class="picture">
-    <span>好看的图片</span><br/>
-    <img src="child.jpg" alt="好看的图片">
+        <span>好看的图片</span><br/>
+        <img src="child.jpg" alt="好看的图片">
     </div>
 
     <div class="picture">
@@ -146,54 +146,72 @@
 <div class="box">
     <aside>
         <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-
-        <h2>侧栏注册窗口标题</h2>
+        <h3>侧栏注册窗口标题</h3>
     </aside>
 
     <form>
-        请输入邮箱的地址：
-        <input type="text" name="email" value="emailaddress">
-
-        <p><b>邮箱地址请按要求格式输入</b></p>
-
-        请输入密码：
-        <input type="text" name="passwd">
-        请重复输入密码：
-        <input type="text" name="passwd2">
-
-        <p>密码为6-16位英文数字</p>
-    </form>
-
-    <form>
-        <input type="radio" name="sex" value="male"/>男
-        <br/>
-        <input type="radio" name="sex" value="female"/>女
-
-        <br/>
-        <lable>城市：</lable>
-        <select name="select" id="ss">
-            <option value="bei">北京</option>
-            <option value="shang">上海</option>
-            <option value="guang">广州</option>
-            <option value="shen">深圳</option>
-            <option value="hang">杭州</option>
-            <option value="nan">南京</option>
-        </select>
+        <div class="tableRow">
+            <p>请输入邮箱的地址：</p>
+            <input type="text" name="email" value="email-address">
+            <br/>
+            <span>邮箱地址请按要求格式输入</span>
+        </div>
 
 
-    </form>
 
-    <form>
-        <input type="checkbox" name="sport"/>
-        运动
-        <input type="checkbox" name="art"/>
-        艺术
-        <input type="checkbox" name="sinence">
-        科学
+        <div class="tableRow">
+            <p>请输入密码：</p>
+            <input type="text" name="passwd">
+        </div>
 
-        <lable>个人描述：</lable>
-        <textarea name="detai" id="detail" cols="20" rows="5"></textarea>
-        <input type="button" value="确认提交">
+        <div class="tableRow">
+            <p>请重复输入密码：</p>
+            <input type="text" name="passwd2">
+            <br/>
+
+            <span>密码为6-16位英文数字</span>
+        </div>
+
+        <div class="tableRow">
+            <p>性别：</p>
+            <input type="radio" name="sex" value="male"/>男
+            <br/>
+            <input type="radio" name="sex" value="female"/>女
+        </div>
+
+        <div class="tableRow">
+            <p>城市：</p>
+            <select name="select" id="ss">
+                <option value="bei">北京</option>
+                <option value="shang">上海</option>
+                <option value="guang">广州</option>
+                <option value="shen">深圳</option>
+                <option value="hang">杭州</option>
+                <option value="nan">南京</option>
+            </select>
+        </div>
+
+
+        <div class="tableRow">
+            <p>爱好：</p>
+            <input type="checkbox" name="sport"/>
+            运动
+            <input type="checkbox" name="art"/>
+            艺术
+            <input type="checkbox" name="sinence">
+            科学
+        </div>
+
+
+        <div class="tableRow">
+
+            <p>个人描述：</p>
+            <textarea name="detail" id="detail" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="tableRow">
+            <input type="button" class="button blue bigrounded middle" style="width: 200%" value="确认提交">
+        </div>
     </form>
 </div>
 </div>
