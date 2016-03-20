@@ -31,8 +31,22 @@
         background-color: rgba(86,61,124,.15);
         border: 1px solid #ddd;
         border: 1px solid rgba(86,61,124,.2);
+
+
+    }
+    [class*="col-md"]{
+        display:none;
+        background: #ff4500;
     }
 
+   @media screen and (min-width: 300px) and (max-width: 768px) {
+
+      [class*="col-"]{
+          display:none;
+          background: #ff4500;
+      }
+
+   }
 
 
 </style>
@@ -79,7 +93,6 @@
 
 
 
-
 <div class="container">
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="row">
@@ -101,6 +114,10 @@
 </div>
 
 </div>
+
+
+
+
 
 
 
