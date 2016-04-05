@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+
+    .data{
+        width: 50px;
+        height: 50px;
+        background: #3c6d99;
+        text-align: center;
+        margin: 5px;
+        float: left;
+    }
+
+</style>
+<body>
+<div>
+<input type="text" id="num">
+<input type="button" id="leftput" value="左侧进">
+<input type="button" id="rightput" value="右侧进">
+<input type="button" id="leftout" value="左侧出">
+<input type="button" id="rightout" value="右测出">
+</div>
+
+<div id="data">
+
+
+
+</div>
+
+<script language="JavaScript">
+var num=document.getElementById("num");
+var data=document.getElementById("data");
+var leftinput  =document.getElementById("leftput");
+var rightinput  =document.getElementById("rightput");
+var leftoutput  =document.getElementById("leftout");
+var rightoutput =document.getElementById("rightout");
+
+window.onload=function () {
+
+
+
+}
+leftinput.onclick=function () {
+    var newnode=document.createElement("div");
+    newnode.className="data";
+    newnode.innerHTML=num.value;
+    data.appendChild(newnode);
+
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
