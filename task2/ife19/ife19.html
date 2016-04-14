@@ -6,6 +6,12 @@
 </head>
 
 <style>
+    #data{
+        position: relative;
+        height: 300px;
+
+    }
+
     .data {
         width: 45px;
         height: 50px;
@@ -46,6 +52,7 @@
         var newnode = document.createElement("div");
         newnode.className = "data";
         newnode.innerHTML = num.value;
+        newnode.style.height=num.value+"px";
         data.appendChild(newnode);
 
     };
@@ -53,6 +60,7 @@
         var newnode = document.createElement("div");
         newnode.className = "data";
         newnode.innerHTML = num.value;
+        newnode.style.height=num.value+"px";
         if (data.childNodes.length) {
             data.insertBefore(newnode, data.childNodes[0]);
         }
